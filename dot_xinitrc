@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# Statusbar loop
+
+start_dwm () {
+	sxhkd&
+    dunst&
+
+	[ -d $(xdg-user-dir PICTURES)/Wallpapers/ ] && \
+	    xwallpaper --zoom $(find $(xdg-user-dir PICTURES)/Wallpapers/ -type f | shuf -n 1)
+	
+    # Loop to refresh the status bar
+    while true; do
+       xsetroot -name "VOL: $(amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')  |  $(date '+%a %d-%m-%Y %H:%M:%S')"
+       sleep 1s
+    done&
+
+    exec dwm
+}
+
+[ -f ~/.Xresources ] && \
+    xrdb -merge -I$HOME ~/.Xresources
+
+[ -f ~/.xprofile ] && . ~/.xprofile
+xinput --set-prop 8 'libinput Accel Speed' -0.4
+redshift&
+
+case $2 in
+    xfce )
+        exec startxfce4
+    ;;
+    kde )
+        export DESKTOP_SESSION=plasma
+        exec startplasma-x11
+    ;;
+    xmonad )
+        exec xmonad
+    ;;
+    awesome )
+    	sxhkd&
+        exec awesome
+    ;;
+    dwm )
+        start_dwm
+    ;;
+    * )
+        start_dwm
+    ;;
+esac
