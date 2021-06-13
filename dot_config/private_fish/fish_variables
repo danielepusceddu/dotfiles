@@ -1,0 +1,49 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export EDITOR:/usr/bin/micro
+SETUVAR --export FZF_DEFAULT_COMMAND:fd\x20\x20\x2d\x2dfollow
+SETUVAR --export SXHKD_SHELL:/usr/bin/bash
+SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_cp:cp\x20\x2dv
+SETUVAR _fish_abbr_ida:wine64\x20/home/valvey/ctf/ida7\x2e5/ida64\x2eexe
+SETUVAR _fish_abbr_ida32:wine64\x20/home/valvey/ctf/ida7\x2e5/ida\x2eexe
+SETUVAR _fish_abbr_mkdir:mkdir\x20\x2dv
+SETUVAR _fish_abbr_mv:mv\x20\x2dv
+SETUVAR _fish_abbr_objdump:objdump\x20\x2dM\x20intel
+SETUVAR _fish_abbr_pacget:sudo\x20pacman\x20\x2dSyu\x3b\x20sudo\x20pacman\x20\x2dS
+SETUVAR _fish_abbr_pacinf:pacman\x20\x2dSi
+SETUVAR _fish_abbr_pacrm:sudo\x20pacman\x20\x2dRns
+SETUVAR _fish_abbr_pacsearch:pacman\x20\x2dSs
+SETUVAR _fish_abbr_pacup:sudo\x20pacman\x20\x2dSyu
+SETUVAR _fish_abbr_rm:rm\x20\x2dv
+SETUVAR _fish_abbr_s:sudo
+SETUVAR _fish_abbr_ydl:youtube\x2ddl
+SETUVAR fish_color_autosuggestion:777777
+SETUVAR fish_color_cancel:\x2dr
+SETUVAR fish_color_command:ffffff
+SETUVAR fish_color_comment:bcbcbc
+SETUVAR fish_color_cwd:green
+SETUVAR fish_color_cwd_root:red
+SETUVAR fish_color_end:949494
+SETUVAR fish_color_error:585858
+SETUVAR fish_color_escape:00a6b2
+SETUVAR fish_color_history_current:\x2d\x2dbold
+SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
+SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
+SETUVAR fish_color_normal:normal
+SETUVAR fish_color_operator:00a6b2
+SETUVAR fish_color_param:d7d7d7
+SETUVAR fish_color_quote:a8a8a8
+SETUVAR fish_color_redirection:808080
+SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_status:red
+SETUVAR fish_color_user:brgreen
+SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR fish_key_bindings:fish_default_key_bindings
+SETUVAR fish_pager_color_completion:normal
+SETUVAR fish_pager_color_description:B3A06D\x1eyellow
+SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_user_paths:/home/valvey/\x2econfig/scripts

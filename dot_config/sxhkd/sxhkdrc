@@ -1,0 +1,58 @@
+# Lock Screen
+Scroll_Lock
+    slock
+
+# Full screenshot
+Print
+	filename=$(xdg-user-dir PICTURES)/Screenshots/$(date +%Y_%m_%d-%H_%M_%S).png; maim --hidecursor > $filename; printf "%s" $filename | xsel -ib
+
+# Select screenshot
+control + Print
+	filename=$(xdg-user-dir PICTURES)/Screenshots/$(date +%Y_%m_%d-%H_%M_%S).png; maim --noopengl --hidecursor -s > $filename; printf "%s" $filename | xsel -ib;
+
+# Window screenshot
+shift + Print
+	filename=$(xdg-user-dir PICTURES)/Screenshots/$(date +%Y_%m_%d-%H_%M_%S).png; maim --hidecursor -i $(xdotool getactivewindow) > $filename; printf "%s" $filename | xsel -ib;
+
+# Music Player controls
+XF86AudioPlay
+    mpc toggle
+
+XF86AudioStop
+    mpc stop
+
+# Volume control
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+super + F12
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+super + F11
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+super + F10
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Tablet
+# Xournal Select Region
+button16
+    xdotool key shift+ctrl+g
+
+# Xournal Pen
+button15
+    xdotool key shift+ctrl+p
+
+# Xournal Eraser
+button14
+    xdotool key shift+ctrl+e
+
+# Xournal Hand
+button13
+    xdotool key shift+ctrl+a
