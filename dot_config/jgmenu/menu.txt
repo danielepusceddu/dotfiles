@@ -1,0 +1,16 @@
+Terminal,xfce4-terminal
+Chromium 1,chromium --profile-directory=Default
+Chromium 2,chromium --profile-directory="Profile 1"
+VS Code,code
+Files,thunar
+Telegram,telegram-desktop
+IDA Pro 32bit,ida32 (xsel -ob)
+IDA Pro 64bit,ida (xsel -ob)
+Anki,anki
+Teams,teams
+KeepassXC,keepassxc
+Okular,okular
+Xournal++,xournalpp
+Joplin,~/.joplin/Joplin.AppImage
+qBittorrent,qbittorrent
+NoiseTorch,~/.local/bin/noisetorch
