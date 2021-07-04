@@ -1,0 +1,7 @@
+export SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS=0
+
+setxkbmap -model pc105aw-sl -layout us -variant cmk_ed_dh
+xset r rate 350 22
+
+# Set altgr to super
+setxkbmap -option altwin:meta_alt
