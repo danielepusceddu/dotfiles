@@ -41,18 +41,26 @@ super + F10
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Tablet
-# Xournal Select Region
-button16
-    xdotool key shift+ctrl+g
-
 # Xournal Pen
-button15
+button16
     xdotool key shift+ctrl+p
 
 # Xournal Eraser
-button14
+button15
     xdotool key shift+ctrl+e
 
-# Xournal Hand
+# Xournal Select Region
+button14
+    xdotool key shift+ctrl+g
+
+# Xournal Select Rectangle
 button13
+    xdotool key shift+ctrl+r
+
+# Xournal Line Mode
+button11
+    xdotool key ctrl+6
+    
+# Xournal Hand
+button12
     xdotool key shift+ctrl+a

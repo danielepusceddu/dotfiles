@@ -1,0 +1,3 @@
+#!/bin/bash
+wine64 ${HOME}/ctf/ida7.5/ida64.exe "$@"
+
